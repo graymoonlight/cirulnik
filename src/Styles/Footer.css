@@ -1,0 +1,33 @@
+.footer{
+    display: flex;
+    margin-top: auto;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #D5101C;
+    color: #FFFFFF;
+    height: 46px;
+    gap: 0px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+.footer-copyright{
+    width: 161px;
+    height: 12px;
+    margin-left: 16px;
+    gap: 0px;
+    font-family: Calibri;
+    font-size: 10px;
+    font-weight: 300;
+    line-height: 12.21px;
+    text-align: left;
+}
+.footer-link_container{
+    margin-right: 16px;
+    height: 16px;
+}
+.footer-link_container-icon{
+    width: 34px;
+    height: 16px;
+    gap: 12px;
+}

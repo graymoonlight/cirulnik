@@ -1,0 +1,16 @@
+.profile{
+    display: flex;
+    justify-content: center;
+}
+.register_btn {
+    position: relative;
+    top: 338px;
+    width: 272px;
+    height: 38px;
+    box-sizing: border-box;
+    background: #D5101C;
+    border-radius: 10px;
+    outline: none;
+    color: #ffffff;
+    border: none;
+}
