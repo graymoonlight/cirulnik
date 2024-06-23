@@ -10,6 +10,8 @@ const Vacation = () => {
         { id: 2, title: 'НАЗВАНИЕ ЗАДАНИЯ', completed: false, completedText: '', inReview: false },
         { id: 3, title: 'НАЗВАНИЕ ЗАДАНИЯ', completed: false, completedText: '', inReview: false },
         { id: 4, title: 'НАЗВАНИЕ ЗАДАНИЯ', completed: false, completedText: '', inReview: false },
+        { id: 5, title: 'НАЗВАНИЕ ЗАДАНИЯ', completed: false, completedText: '', inReview: false },
+        { id: 6, title: 'НАЗВАНИЕ ЗАДАНИЯ', completed: false, completedText: '', inReview: false },
     ]);
     const [currentTask, setCurrentTask] = useState(null);
     const [showCongratulations, setShowCongratulations] = useState(false);
@@ -22,7 +24,11 @@ const Vacation = () => {
         setCheckpoints(prevCheckpoints =>
             prevCheckpoints.map((cp, index) => 
                 cp.id === id 
-                    ? { ...cp, completed: true, completedText: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.', inReview: true } 
+                    ? { ...cp, completed: true, completedText: <p>
+                        {`Lorem ipsum dolor sit amet, consectetur`}
+                        <br />
+                        {`adipiscing elit.`}
+                    </p>, inReview: true }
                     : index === id - 2 
                         ? { ...cp, completedText: 'Задание выполнено', completed: false, inReview: false }
                         : cp
@@ -44,7 +50,8 @@ const Vacation = () => {
 
     return (
         <div className="job-page">
-            <h1>Вакансии</h1>
+            <h1>НАЗВАНИЕ ВАКАНСИИ</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur<br/> adipiscing elit</p>
             <div className="map">
                 {checkpoints.map((checkpoint) => (
                     <Checkpoint
@@ -68,4 +75,5 @@ const Vacation = () => {
         </div>
     );
 };
+
 export default Vacation;

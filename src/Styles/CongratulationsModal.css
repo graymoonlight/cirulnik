@@ -1,19 +1,58 @@
 .congratulations-modal {
-    text-align: center;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    border-left: 5px solid #D5101C;
+    padding-left: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
     padding: 20px;
     background: white;
-    border-radius: 10px;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    width: 250px;
 }
 
-.congratulations-modal h2 {
-    margin-bottom: 10px;
+.modal-content {
+    text-align: center;
+}
+.pozdr{
+    color: #D5101C;
+    font-family: Calibri;
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 30.52px;
+}
+.modal-content p{
+    font-family: Calibri;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 14.65px;
+    text-align: center;
+    color: #585858;
 }
 
-.congratulations-modal p {
-    margin-bottom: 20px;
+.modal-actions {
+    margin-top: 20px;
+    justify-content: center;
 }
 
 .modal-actions button {
-    margin: 5px;
+    width: 217px;
+    height: 37px;
+    top: 108px;
+    left: 41px;
+    gap: 0px;
+    border-radius: 10px;
+    border: 1px;
+    color: #585858;
+    font-family: Calibri;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 15.87px;
+    text-align: center;
 }

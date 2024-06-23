@@ -5,13 +5,14 @@
     justify-content: center;
     text-align: center;
 }
+
 .job-page h1{
+    margin-top: 20px;
     font-family: Calibri;
     font-size: 20px;
     font-weight: 700;
     line-height: 24.41px;
     text-align: center;
-    margin-top: 20px;
     color: #1C1C1B;
 }
 
@@ -26,6 +27,7 @@
 
 .map {
     display: flex;
-    flex-direction: column;
+    justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
 }

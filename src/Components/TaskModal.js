@@ -3,27 +3,23 @@ import '../Styles/TaskModal.css';
 
 const TaskModal = ({ task, onClose, onComplete}) => {
     const [answer, setAnswer] = useState('');
-    const [file, setFile] = useState(null);
     const [submitted, setSubmitted] = useState(false);
 
-    const handleFileChange = (e) => {
-        setFile(e.target.files[0]);
-    };
 
     const handleSubmit = () => {
         console.log('Answer:', answer);
-        console.log('File:', file);
         setSubmitted(true);
         onComplete(task.id);
     };
 
     return (
-        <div className="task-modal">
-            <div className="modal-content">
+        <div className='task-modal'>
+            <div className='modal-content'>
                 {submitted ? (
-                    <div className="thank-you-message">
-                        <p>Спасибо за ответ! Наши HR его проверят и в скором времени вам откроется доступ к следующему этапу.</p>
-                        <button onClick={onClose}>Закрыть</button>
+                    <div className='thank-you-message'>
+                        <h2>Спасибо за ответ!</h2>
+                        <p>Наши HR его проверят и в скором времени вам откроется доступ к следующему этапу.</p>
+                        <button onClick={onClose}>Продолжить</button>
                     </div>
                 ) : (
                     <>
@@ -34,10 +30,8 @@ const TaskModal = ({ task, onClose, onComplete}) => {
                             value={answer}
                             onChange={(e) => setAnswer(e.target.value)}
                         ></textarea>
-                        <div className="modal-actions">
-                            <input type="file" onChange={handleFileChange} />
-                            <button onClick={handleSubmit}>Отправить ответ</button>
-                            <button onClick={onClose}>Закрыть</button>
+                        <div className='modal-actions'>
+                            <button onClick={handleSubmit}>Отправить</button>
                         </div>
                     </>
                 )}
