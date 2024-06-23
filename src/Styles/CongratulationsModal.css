@@ -1,0 +1,19 @@
+.congratulations-modal {
+    text-align: center;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.congratulations-modal h2 {
+    margin-bottom: 10px;
+}
+
+.congratulations-modal p {
+    margin-bottom: 20px;
+}
+
+.modal-actions button {
+    margin: 5px;
+}
