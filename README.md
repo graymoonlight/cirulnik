@@ -31,7 +31,7 @@
 1. Клонировать репозиторий:
 
    ```bash
-   git clone https://github.com/your-username/your-repository.git```
+   git clone https://github.com/graymoonlight/cirulnik.git
 2. Откройте http://localhost:3000 в браузере, чтобы увидеть приложение в действии.
 
 Graymoonlight
