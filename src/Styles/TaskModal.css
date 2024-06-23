@@ -14,6 +14,58 @@
     text-align: center;
     background: white;
 }
+.modal-content h2{
+    font-family: Calibri;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24.41px;
+    color: #1C1C1B;
+    margin-top: 20px;
+}
+
+.task-header{
+    display: flex;
+}
+
+.pencil-icon {
+    margin-top: 10px;
+    margin-right: 5px;
+}
+.container_pencil{
+    margin-left: 20px;
+    margin-right: 10px;
+    border: 2px solid #D5101C;
+    background-color: #D5101C;
+    border-radius: 10px;
+    width: 48px;
+    height: 48px;
+}
+
+.modal-content p{
+    font-family: Calibri;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 18.31px;
+}
+
+.second{
+    margin-top: 10px;
+    font-family: Calibri;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 15.87px;
+    text-align: justified;
+}
+
+.task-modal textarea{
+    border: 1px solid;
+    width: 269px;
+    height: 61px;
+    top: 343px;
+    left: 25px;
+    border-radius: 5px;
+    border-color:#c9c9c9;
+}
 
 .modal-content .thank-you-message {
     border-left: 5px solid #21C196;
